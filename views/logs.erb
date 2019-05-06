@@ -1,0 +1,11 @@
+<%@logs.each do |log|%>
+  <a href="/logs/<%=log.id%>">
+    <div class="logs">
+      <%=log.submit_date%>
+      <%=" - "%>
+      <%=log.experience_name%>
+      <%=" - "%>
+      <%=log.drug%>
+    </div>
+  </a>
+<%end%>

@@ -1,0 +1,236 @@
+* {
+  font-family: 'Cabin', sans-serif;
+}
+
+body {
+  background: rgb(32, 32, 32);
+}
+
+.nav-bar {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar > * {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  color: rgb(233, 194, 19);
+  display: inline-block;
+}
+
+.nav-div-1 > * {
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.nav-div-2 a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-div-2 form {
+  display: inline-block;
+}
+
+.nav-div-2 a:hover {
+  text-decoration: underline;
+  transition: all 1s ease-in-out;
+}
+
+.nav-div-1 > *:hover {
+  display: inline-block;
+  text-decoration: underline;
+  transition: all 1s ease-in-out;
+}
+
+.email {
+  display: inline-block;
+  text-align: right;
+  margin-left: 2rem;
+}
+
+.nav-logout {
+  display: inline-block;
+  text-align: right;
+  color: black;
+}
+.search {
+  padding: 0.2rem;
+  font-size: 1rem;
+  width: 89%;
+}
+
+.search-btn {
+  padding: 0.2rem;
+  width: 10%;
+  margin: auto;
+  display: inline-block;
+}
+
+.logo {
+  color: orange;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.form {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+  background-color: rgb(20, 120, 151);
+  margin-top: 5rem;
+  padding-top: 2rem;
+}
+
+.form > * {
+  color: rgb(29, 29, 29);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form select, input {
+  margin-bottom: 1.5rem;
+}
+
+.form  h2 {
+  font-size: 1.8rem;
+  color: grey;
+  border-bottom: 2px solid grey;
+  margin-bottom: 1rem;
+}
+
+.form  h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.form button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.login-div {
+  width: 50%;
+  margin: auto;
+  background-color: rgb(32, 32, 32);
+}
+
+.label {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.login-div input {
+  font-size: 1rem;
+  margin: auto;
+}
+
+.login-button {
+  font-size: 1rem;
+  margin: auto;
+  background: darkgrey;
+}
+
+.login-div form > * {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-div h2 {
+  padding-bottom: 1rem;
+  color: orange;
+  margin-top: 5rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.signup-text-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.or {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.signup-link {
+  text-align: center;
+  display: block;
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.signup-div {
+  width: 50%;
+  margin: auto;
+  background-color: rgb(32, 32, 32);
+}
+
+.signup-div input {
+  font-size: 1rem;
+  margin: auto;
+}
+
+.signup-div form > * {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.signup-div h2 {
+  padding-bottom: 1rem;
+  color: orange;
+  margin-top: 5rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.logs {
+  font-size: 2rem;
+  height: 2rem;
+  margin-top: 0.8rem;
+  background: orange;
+  display: flex;
+  justify-content: space-between
+}
+
+.log-dets {
+  width: 80%;
+}
+
+.log-dets > h4 {
+  font-size: 1.5rem;
+  color: rgb(252, 177, 79);
+  display: block;
+}
+
+.log-dets > h2 {
+  color: rgb(255, 115, 0);
+}
+
+.log-dets > h3 {
+  font-size: 1rem;
+  color: rgb(245, 111, 62);
+  display: block;
+}
+
+.notfound {
+  font-size: 3rem;
+  color: orange;
+  text-align: center;
+  margin-top: 5rem;
+}

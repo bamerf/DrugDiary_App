@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <link rel='stylesheet' href='/stylesheets/reset.css'>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav-bar">
+      <div class="nav-div-1">
+        <a href="/">Home</a>
+        <a href="/logs">Logs</a>
+        <%if logged_in?%>
+        <a href="/logs/new">Submit Experience</a> 
+      </div>
+      <div class="nav-div-2">
+        <div class="email">
+        <%= current_user.email %>
+        <a href="/mylogs">My Logs</a>
+        <form class="" action="/session" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button class="nav-logout">Logout</button>
+        </form>
+        <%else%>
+      </div>
+      <div class="nav-div-2">
+        <a href="/login">Submit Experience</a>
+        <%end%>
+      </div>
+  </nav>
+  <form action="/search">
+    <input class="search" type="text" placeholder="Search by Experience: Name, Gender, Drug, etc..." name="search">
+    <button class="search-btn">Search</button>
+  </form>
+  <%= yield %>
+
+</body>
+</html>

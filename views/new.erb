@@ -1,0 +1,250 @@
+<div class="form">
+
+  <form action="/logs" method="post">
+
+  <h3>Experience Name</h3>
+  <input type="text" name="name">
+
+  <h2>PERSONAL INFO</h2>
+
+  <h3>Gender</h3>
+  <input type="radio" name="gender"  value="Female" id="">
+  <label for="">Female</label>
+  <input type="radio" name="gender" value="Male" id="">
+  <label for="">Male</label>
+
+
+  <h3>Age</h3> 
+  <select name="age" id="">
+    <option value="">Select Age</option>
+    <option value="18 and Below">18 and Below</option>
+    <option value="18-23">18-23</option>
+    <option value="23-28">23-28</option>
+    <option value="28-33">28-33</option>
+    <option value="33-38">33-38</option>
+    <option value="38-43">38-43</option>
+    <option value="43-48">43-48</option>
+    <option value="48-53">48-53</option>
+    <option value="53-58">53-58</option>
+    <option value="58 and Above">58 and Above</option>
+  </select>
+
+  <h3>Body Weight in Kgs</h3>
+  <select name="body_weight" id="">
+    <option value="50 and Less">50 and less</option>
+    <option value="50-75">50-75</option>
+    <option value="70-90">70-90</option>
+    <option value="90-110">90-110</option>
+    <option value="110 and Above">110 and above</option>
+  </select>
+
+
+  <h2>SUBSTANCE INFO</h2>
+
+
+  <h3>Drug/Mixture</h3>
+  <input type="text" name="drug">
+
+
+  <h3>Dosage</h3>
+  <select name="dosage" id="">
+    <option value="Very Low">Very Low</option>
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+    <option value="Very High">Very High</option>
+    <option value="Unknown">Unknown</option>
+  </select>
+
+  <h3>Trustworthiness/Purity</h3>
+  <input type="radio" name="purity" value="Trustworthy" id="">
+  <label for="">Trustworthy</label>
+  <input type="radio" name="purity" value="Not So Trustworthy" id="">
+  <label for="">Not So Trustworthy</label>
+  <input type="radio" name="purity" value="Dodgy" id="">
+  <label for="">Dodgy</label>
+  <input type="radio" name="purity" value="Not Sure" id="">
+  <label for="">Not Sure</label>
+
+  <h3>Prior Experience with Drug</h3>
+  <input type="radio" name="prior_experience" value="No Prior Experience" id="">
+  <label for="">No Prior Experience</label>
+  <input type="radio" name="prior_experience" value="Some Epxerience" id="">
+  <label for="">Some Epxerience</label>
+  <input type="radio" name="prior_experience" value="Regular Experience" id="">
+  <label for="">Regular Experience</label>
+  <input type="radio" name="prior_experience" value="Dependent" id="">
+  <label for="">Dependent</label>
+
+  <h2>Bodily Intakes</h2>
+  
+  <h3>Other Substance Mixed</h3>
+  <select name="substance_consumption" id="">
+    <option value="No Consumption">No Consumption</option>
+    <option value="Light Alcohol Intake">Light Alcohol Intake</option>
+    <option value="Heavy Alcohol Intake">Heavy Alcohol Intake</option>
+    <option value="Light Other Substances Intake">Light Other Substances Intake</option>
+    <option value="Heavy Other Substance Intake">Heavy Other Substance Intake</option>
+  </select>
+
+  <h3>Food Consumed Prior</h3>
+  <input type="radio" name="food" value="Light" id="">
+  <label for="">Light</label>
+  <input type="radio" name="food" value="Comfortable" id="">
+  <label for="">Comfortable</label>
+  <input type="radio" name="food" value="Heavy" id="">
+  <label for="">Heavy</label>
+  <input type="radio" name="food" value="Not Sure" id="">
+  <label for="">Not Sure</label>
+
+
+  <h3>Hydration/Water Intake</h3>
+  <input type="radio" name="hydration" value="Hydrated" id="">
+  <label for="">Hydrated</label>
+  <input type="radio" name="hydration" value="Somewhat Hydrated" id="">
+  <label for="">Somewhat Hydrated</label>
+  <input type="radio" name="hydration" value="Dehydrated" id="">
+  <label for="">Dehydrated</label>
+  <input type="radio" name="hydration" value="Not Sure" id="">
+  <label for="">Not Sure</label>
+
+  <h2>Environmental Factors</h2>
+
+  <h3>Weather</h3>
+  <input type="radio" name="weather" value="Mostly Sunny" id="">
+  <label for="">Mostly Sunny</label>
+  <input type="radio" name="weather" value="Mostly Cloudy" id="">
+  <label for="">Mostly Cloudy</label>
+  <input type="radio" name="weather" value="Mostly Raining" id="">
+  <label for="">Mostly Raining</label>
+  <input type="radio" name="weather" value="Mostly Snowing" id="">
+  <label for="">Mostly Snowing</label>
+
+  <h3>Temprature</h3>
+  <input type="radio" name="temprature" value="Comfortable Variation" id="">
+  <label for="">Comfortable Variation</label>
+  <input type="radio" name="temprature" value="Cold" id="">
+  <label for="">Cold</label>
+  <input type="radio" name="temprature" value="Hot" id="">
+  <label for="">Hot</label>
+  <input type="radio" name="temprature" value="Uncomfortable Variation" id="">
+  <label for="">Uncomfortable Variation</label>
+
+  <h3>Environment/Space</h3>
+  <input type="radio" name="environment" value="Safe/Familiar" id="">
+  <label for="">Safe/Familiar</label>
+  <input type="radio" name="environment" value="Safe/Unfamiliar" id="">
+  <label for="">Safe/Unfamiliar</label>
+  <input type="radio" name="environment" value="Not So Safe/Familiar" id="">
+  <label for="">Not So Safe/Familiar</label>
+  <input type="radio" name="environment" value="Not So Safe/Unfamiliar" id="">
+  <label for="">Not So Safe/Unfamiliar</label>
+
+  <h3>Group Environment (at peak of experience)</h3>
+  <input type="radio" name="group_environment" value="Alone" id="">
+  <label for="">Alone</label>
+  <input type="radio" name="group_environment" value="With Friends" id="">
+  <label for="">With Friends</label>
+  <input type="radio" name="group_environment" value="With Strangers" id="">
+  <label for="">With Strangers</label>
+  <input type="radio" name="group_environment" value="Very Crowded" id="">
+  <label for="">Very Crowded</label>
+
+  <h2>Mood</h2>
+
+  <h3>Mood Before Experience</h3>
+  <input type="radio" name="mood_before" value="Comfortable/Happy" id="">
+  <label for="">Comfortable/Happy</label>
+  <input type="radio" name="mood_before" value="Neutral" id="">
+  <label for="">Neutral</label>
+  <input type="radio" name="mood_before" value="Stressed" id="">
+  <label for="">Stressed</label>
+  <input type="radio" name="mood_before" value="Anxious" id="">
+  <label for="">Anxious</label>
+
+  <h3>Experience Intensity</h3>
+  <input type="radio" name="intensity" value="Low" id="">
+  <label for="">Low</label>
+  <input type="radio" name="intensity" value="Medium" id="">
+  <label for="">Medium</label>
+  <input type="radio" name="intensity" value="High" id="">
+  <label for="">High</label>
+  <input type="radio" name="intensity" value="Separate Reality" id="">
+  <label for="">Separate Reality</label>
+
+  <h3>Visuals during Experience</h3>
+  <input type="radio" name="visuals" value="Normal" id="">
+  <label for="">Normal</label>
+  <input type="radio" name="visuals" value="Color Intensified or Changed" id="">
+  <label for="">Color Intensified or Changed</label>
+  <input type="radio" name="visuals" value="Patterns or Distortion" id="">
+  <label for="">Patterns or Distortion</label>
+  <input type="radio" name="visuals" value="Hallucination" id="">
+  <label for="">Hallucination</label>
+
+  <h3>Sound</h3>
+  <input type="radio" name="sound" value="Normal" id="">
+  <label for="">Normal</label>
+  <input type="radio" name="sound" value="Amplified" id="">
+  <label for="">Amplified</label>
+  <input type="radio" name="sound" value="Distortion and Delay" id="">
+  <label for="">Distortion and Delay</label>
+  <input type="radio" name="sound" value="Vacuum or Sudden Silence" id="">
+  <label for="">Vacuum or Sudden Silence</label>
+
+  <h3>Euphoria during Experience</h3>
+  <input type="radio" name="euphoria" value="Low" id="">
+  <label for="">Low</label>
+  <input type="radio" name="euphoria" value="Medium" id="">
+  <label for="">Medium</label>
+  <input type="radio" name="euphoria" value="High" id="">
+  <label for="">High</label>
+
+  <h3>Panic during Experience</h3>
+   <input type="radio" name="fear" value="Not Panicked" id="">
+  <label for="">Not Panicked</label>
+  <input type="radio" name="fear" value="Low" id="">
+  <label for="">Low</label>
+  <input type="radio" name="fear" value="Medium" id="">
+  <label for="">Medium</label>
+  <input type="radio" name="fear" value="High" id="">
+  <label for="">High</label>
+
+  <h3>Revelations during Experience</h3>
+  <input type="radio" name="revelations" value="No Revelations" id="">
+  <label for="">No Revelations</label>
+  <input type="radio" name="revelations" value="One Revelation" id="">
+  <label for="">One Revelation</label>
+  <input type="radio" name="revelations" value="A Few" id="">
+  <label for="">A Few</label>
+  <input type="radio" name="revelations" value="Many" id="">
+  <label for="">Many</label>
+
+  <h2>Reflections</h2>
+
+  <h3>Experience</h3>
+  <input type="radio" name="experience" value="Comfortable/Happy" id="">
+  <label for="">Comfortable/Happy</label>
+  <input type="radio" name="experience" value="Uplifted" id="">
+  <label for="">Uplifted</label>
+  <input type="radio" name="experience" value="Neutral" id="">
+  <label for="">Neutral</label>
+  <input type="radio" name="experience" value="Uncomfortable/Regretful" id="">
+  <label for="">Uncomfortable/Regretful</label>
+
+  <h3>User Recommendation</h3>
+  <input type="radio" name="user_recommendation" value="Take/Pretty Safe" id="">
+  <label for="">Take/Pretty Safe</label>
+  <input type="radio" name="user_recommendation" value="Be Careful" id="">
+  <label for="">Be Careful</label>
+  <input type="radio" name="user_recommendation" value="Avoid" id="">
+  <label for="">Avoid</label>
+
+  <h3>Notes</h3>
+  <textarea name="notes" id="" cols="30" rows="4"></textarea>
+
+  <button>Submit Log</button>
+
+  </form>
+
+</div>

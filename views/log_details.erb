@@ -1,0 +1,108 @@
+<div class="log-dets">
+  <h4>
+    Experience Name:  <%=@log.experience_name%>
+  </h4>
+  <h4>
+    Submition Date:  <%=@log.submit_date%>
+  </h4>
+  <h2>
+    <%="PERSONAL INFO"%>
+  </h2>
+  <h4>
+    Gender: <%=@log.gender%>
+  </h4>
+  <h4>
+    Age: <%=@log.age%>
+  </h4>
+  <h4>
+    Body Weight: <%=@log.body_weight%>
+  </h4>
+  <h2>
+    <%="SUBSTANCE INFO"%>
+  </h2>
+  <h4>
+    Substance Taken: <%=@log.drug%>
+  </h4>
+  <h4>
+    Dosage: <%=@log.dosage%>
+  </h4>
+  <h4>
+    Purity/Trustworthy: <%=@log.purity%>
+  </h4>
+  <h4>
+    Prior Experience with Substance: <%=@log.prior_experience%>
+  </h4>
+  <h2>
+    <%="BODILY INTAKES"%>
+  </h2>
+  <h4>
+    Other Substances Mixed: <%=@log.substance_consumption%>
+  </h4>
+  <h4>
+    Food: <%=@log.food%>
+  </h4>
+  <h4>
+    Hydration: <%=@log.hydration%>
+  </h4>
+  <h2>
+    <%="ENVIRONMENTAL FACTORS"%>
+  </h2>
+  <h4>
+    Weather: <%=@log.weather%>
+  </h4>
+  <h4>
+    Temprature: <%=@log.temprature%>
+  </h4>
+  <h4>
+    Environment: <%=@log.environment%>
+  </h4>
+  <h4>
+    Group Environment: <%=@log.group_environment%>
+  </h4>
+  <h2>
+    <%="MOOD"%>
+  </h2>
+  <h4>
+    Mood Before Experience: <%=@log.mood_before%>
+  </h4>
+  <h4>
+    Experience Intensity: <%=@log.intensity%>
+  </h4>
+  <h4>
+    Visuals: <%=@log.visuals%>
+  </h4>
+  <h4>
+    Euphoria: <%=@log.euphoria%>
+  </h4>
+  <h4>
+    Panic: <%=@log.fear%>
+  </h4>
+  <h4>
+    Revelation: <%=@log.revelations%>
+  </h4>
+  <h2>
+    <%="REFLECTIONS"%>
+  </h2>
+  <h4>
+    Overall Experience: <%=@log.experience%>
+  </h4>
+  <h4>
+    Recommendation: <%=@log.user_recommendation%>
+  </h4>
+  <h3>
+    Notes: <%=@log.notes%>
+  </h3>
+</div>
+
+<div class="like-btn">
+  <%if logged_in?%>
+    <form action="/likes"     method="post">
+      <input type="hidden" name="log_id" value="<%=@log.id%>">
+      <button>Like</button> 
+    </form>
+  <%else%>
+    <form action="/login" method="get">
+    <button>Like</button>
+    </form>
+  <%end%>
+</div>
