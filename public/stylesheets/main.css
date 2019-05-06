@@ -234,3 +234,10 @@ body {
   text-align: center;
   margin-top: 5rem;
 }
+
+.video {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 480px;
+}
