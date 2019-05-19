@@ -1,6 +1,6 @@
-Drug Diary APP for logging all your experiences on different substances.
+Drug Diary App for logging and tracking all your experiences on different substances.
 
-Made Ruby and Active Records 
+Made with Ruby and Active Records 
 
 
 You can check out the app here:
