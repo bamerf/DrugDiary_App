@@ -154,6 +154,10 @@ body {
   text-align: center;
 }
 
+.login-link {
+  margin: right;
+}
+
 .signup-text-div {
   display: flex;
   justify-content: center;

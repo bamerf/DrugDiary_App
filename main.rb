@@ -118,9 +118,9 @@ post '/session' do
   user = User.find_by(email: params[:email])
   if user && user.authenticate(params[:password])
     session[:user_id] = user.id
-    redirect '/logs'
+    redirect '/'
   else
-    erb :login
+    erb :notfound
   end
 end
 
@@ -133,8 +133,6 @@ get '/mylogs' do
   @myLogs = Log.where(user_id: current_user.id)
   if @myLogs.any?
     erb :mylogs
-  else
-    erb :notfound
   end
 end
 
@@ -142,7 +140,5 @@ get "/search" do
   @search = Log.where("experience_name ilike '%#{params[:search]}%'")
   if @search.any?
     erb :search
-  else
-    erb :notfound
   end
 end
